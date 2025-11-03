@@ -70,7 +70,7 @@ $conn->close();
         <li class="nav-item"><a class="nav-link" href="admin_dijaki.php">Učenci</a></li>
       </ul>
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="profil.php"><i class="bi bi-person-circle"></i> <?php echo htmlspecialchars($_SESSION['user_name']); ?></a></li>
+        <li class="nav-item"><a class="nav-link" href="profil.php"><i class="bi bi-person-circle"></i> <?php echo htmlspecialchars($_SESSION['user_name'] ?? ''); ?></a></li>
         <li class="nav-item"><a class="nav-link" href="logout.php"><i class="bi bi-box-arrow-right"></i> Odjava</a></li>
       </ul>
     </div>
