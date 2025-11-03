@@ -8,7 +8,7 @@ $message = '';
 
 // Handle delete
 if (isset($_GET['delete'])) {
-  $id = (int)$_GET['delete'];
+  $id = (int)$_GET['delete'];     
   $stmt = $conn->prepare("DELETE FROM predmeti WHERE id = ?");
   if ($stmt) { $stmt->bind_param('i', $id); $stmt->execute(); $stmt->close(); $message = 'Predmet izbrisan.'; }
 }
